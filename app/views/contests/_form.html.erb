@@ -1,0 +1,53 @@
+<%= form_for(@contest) do |f| %>
+  <% if @contest.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contest.errors.count, "error") %> prohibited this contest from being saved:</h2>
+
+      <ul>
+      <% @contest.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    
+  </div>
+  <div class="field">
+    <%= f.label :Contest_starts %><br>
+    <%= f.datetime_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :Contest_closes %><br>
+    <%= f.datetime_select :end_date %>
+  </div>
+  <%= f.fields_for :quizzes do |builder|%>
+ 
+  <p>
+<%= builder.label :ques_content,"Question" %><br>
+  <%= builder.text_area :ques_content, :rows => 3%><br><br>
+  <%= builder.label :opt_A,"Option A" %>
+  <%= builder.text_field :opt_A, :rows => 3%><br><br>
+  <%= builder.label :opt_B,"Option B" %>
+  <%= builder.text_field :opt_B, :rows => 3%><br><br>
+  <%= builder.label :opt_C,"Option c" %>
+  <%= builder.text_field :opt_c, :rows => 3%><br><br>
+  <%= builder.label :opt_D,"Option d" %>
+  <%= builder.text_field :opt_d, :rows => 3%><br><br>
+  <%= builder.label :correct_opt,"Correct Answer" %><br>
+  <%= builder.text_field :correct_opt, :rows => 3%><br><br>
+  <%= builder.check_box :_destroy %>
+  <%= builder.label :_destroy,"Remove Question" %>
+  </p>
+  
+  
+  <% end %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

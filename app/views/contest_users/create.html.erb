@@ -1,0 +1,11 @@
+<strong> Congrats your answer is correct to offically submit answer please register </strong>
+
+<%= form_for (:participant , :url => {:action=> 'create'}) do |f| %>
+<%= f.label(:participant_name,'Name') %> <br>
+<%= f.text_field :participant_name %>
+<%= f.label(:participant_email,'Email') %> <br>
+<%= f.text_field :participant_email %>
+<%= f.label(:participant_phone,'Email') %> <br>
+<%= f.text_field :participant_phone %>
+<%= f.submit ('Register')%> <br>
+<% end %>

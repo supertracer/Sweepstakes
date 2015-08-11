@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  participant_name: MyString
+  participant_email: MyString
+  participant_phone: MyString
+  contest_id: 1
+
+two:
+  participant_name: MyString
+  participant_email: MyString
+  participant_phone: MyString
+  contest_id: 1

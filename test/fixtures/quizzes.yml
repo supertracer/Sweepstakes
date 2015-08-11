@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contest_id: 1
+  ques_content: MyText
+  opt_A: MyString
+  opt_B: MyString
+  opt_c: MyString
+  opt_d: MyString
+  correct_opt: MyString
+
+two:
+  contest_id: 1
+  ques_content: MyText
+  opt_A: MyString
+  opt_B: MyString
+  opt_c: MyString
+  opt_d: MyString
+  correct_opt: MyString

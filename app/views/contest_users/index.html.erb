@@ -1,0 +1,17 @@
+<strong>Ques: <%= @quiz.ques_content %>	</strong>
+<%= form_for( :participant, :url => contest_users_path, :id => ) do |f| %>
+<%= f.label(:A) %>
+<%= f.radio_button(:answer,:value => "#{@quiz.opt_A}") %> <%= @quiz.opt_A %>  <br><br>
+<%= f.label(:B) %>
+<%= f.radio_button(:answer ,:value => "#{@quiz.opt_B}" )%> <%= @quiz.opt_B %> <br> <br>
+<%= f.label(:C) %>
+<%= f.radio_button(:answer , :value => "#{@quiz.opt_c}")%> <%= @quiz.opt_c %> <br> <br>
+<%= f.label(:D) %>
+<%= f.radio_button(:answer ,:value => "#{@quiz.opt_d}")%> <%= @quiz.opt_d %> <br> <br> 
+
+<%= submit_tag("Submit")%>
+
+<% end %>
+
+
+

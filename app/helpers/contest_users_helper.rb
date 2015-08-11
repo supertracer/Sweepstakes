@@ -1,0 +1,2 @@
+module ContestUsersHelper
+end

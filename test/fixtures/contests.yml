@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  client_id: 1
+  participant_id: 1
+  quiz: 
+  start_date: 2015-08-10 10:46:57
+  end_date: 2015-08-10 10:46:57
+
+two:
+  name: MyString
+  client_id: 1
+  participant_id: 1
+  quiz: 
+  start_date: 2015-08-10 10:46:57
+  end_date: 2015-08-10 10:46:57
